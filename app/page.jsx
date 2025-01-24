@@ -39,6 +39,54 @@ export default function Home() {
             />
           </div>
         </section>
+        <section className="skill">
+          <div className="container mx-auto p-6 md:p-12">
+            <h2 className="text-2xl font-bold mb-6">Skills</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="card p-4 rounded-lg shadow-lg">
+                <h3 className="text-xl font-bold mb-2">Frontend</h3>
+                <ul>
+                  <li>React</li>
+                  <li>Next.js</li>
+                  <li>HTML/CSS/JS</li>
+                  <li>Tailwind CSS</li>
+                </ul>
+              </div>
+              <div className="card p-4 rounded-lg shadow-lg">
+                <h3 className="text-xl font-bold mb-2">Backend</h3>
+                <ul>
+                  <li>Node.js</li>
+                  <li>Express.js</li>
+                  <li>Django</li>
+                  <li>MongoDB</li>
+                  <li>PostgreSQL</li>
+                </ul>
+              </div>
+              <div className="card p-4 rounded-lg shadow-lg">
+                <h3 className="text-xl font-bold mb-2">Databse</h3>
+                <ul>
+                  <li>MongoDB</li>
+                  <li>PostgreSQL</li>
+                </ul>
+              </div>
+              <div className="card p-4 rounded-lg shadow-lg">
+                <h3 className="text-xl font-bold mb-2">Languages</h3>
+                <ul>
+                  <li>Python</li>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
+              <div className="card p-4 rounded-lg shadow-lg">
+                <h3 className="text-xl font-bold mb-2">Others</h3>
+                <ul>
+                  <li>Git</li>
+                  <li>Github</li>
+                  <li>REST API</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
   );
 }
