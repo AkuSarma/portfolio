@@ -1,7 +1,8 @@
-import React from "react";
-import TextTransition, { presets } from "react-text-transition";
+'use client';
+import React, { useState, useEffect } from "react";
+import "../../styles/ChangingRoles.css";
 
-const TEXTS = [
+const Roles = [
   "Full-Stack Developer",
   "MERN Stack",
   "PostgreSQL",
@@ -13,20 +14,19 @@ const TEXTS = [
 ];
 
 const ChangingRole = () => {
-     const [index, setIndex] = React.useState(0);
+  const [currentRole, setCurrentRole] = useState(0);
 
-     React.useEffect(() => {
-       const intervalId = setInterval(
-         () => setIndex((index) => index + 1),
-         3000 // every 3 seconds
-       );
-       return () => clearTimeout(intervalId);
-     }, []);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentRole((prevRole) => (prevRole + 1) % Roles.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <TextTransition springConfig={presets.wobbly}>
-      {TEXTS[index % TEXTS.length]}
-    </TextTransition>
+    <div className="role-container">
+      <span className="role">{Roles[currentRole]}</span>
+    </div>
   );
 }
 

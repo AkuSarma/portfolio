@@ -1,8 +1,6 @@
 'use client';
-import Footer from "./components/Footer";
 import ChangingRole from "./components/Home/ChangingRole";
-import Navbar from "./components/Navbar";
-import './styles/home.css'
+import './styles/Home.css'
 import Link from "next/link";
 
 
@@ -18,9 +16,9 @@ export default function Home() {
         <section className="hero max-h-80vh flex flex-col md:flex-row items-center justify-between p-6 md:p-12">
           <div className="left flex-1 text-center md:text-left mb-6 md:mb-0">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">Aku Sarma</h1>
-            <p className="text-lg md:text-xl mb-4">
+            <div className="text-lg md:text-xl mb-4">
               <ChangingRole />
-            </p>
+            </div>
             <div className="space-x-4">
               <button className="bg-blue-500 text-white py-2 px-4 rounded">
                 <Link href="/projects">View Projects</Link>
