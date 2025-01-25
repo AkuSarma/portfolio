@@ -1,4 +1,4 @@
-import Footer from "./components/Footer";
+import DarkModeToogle from "./components/DarkModeToogle";
 import Navbar from "./components/Navbar";
 import "./globals.css";
 
@@ -8,12 +8,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  
   return (
     <html lang="en">
-      <body>
+      <body className="dark bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100">
         <Navbar />
+        <DarkModeToogle />
         {children}
-        <Footer />
       </body>
     </html>
   );
