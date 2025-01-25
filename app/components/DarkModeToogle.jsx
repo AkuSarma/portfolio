@@ -11,13 +11,13 @@ const DarkModeToogle = () => {
   return (
     <button 
       onClick={() => darkModeHandler()} 
-      className="fixed top-4 left-4 p-2 bg-gray-800 text-white rounded-full"
+      className="fixed top-4 left-4 p-2 bg-gray-800 text-white rounded-full w-8 hover:scale-125 active:scale-100 hover:shadow-lg"
     >
       {
-        dark && <>dark</> // render sunny when dark is true
+        dark && <img src="static/icons/sunny.png" alt="sun"/>
       }
       {
-        !dark && <>not dark</> // render moon when dark is false
+        !dark && <img src="static/icons/crescent-moon.png" alt="moon"/>
       }
     </button>
   );
