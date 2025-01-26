@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="home min-h-svh flex flex-row justify-center items-center w-full px-[20vw] bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100">
       <div className="left w-full text-lg">
-        <p className="text-2xl font-semibold">Hi, I'm</p>
+        <p className="text-2xl font-semibold">Hi, I&apos;m</p>
         <p className="text-4xl font-bold mt-2">Aku Sarma</p>
         <p className="text-2xl mt-2">
           a <span className="text-blue-500 dark:text-blue-300"><ChangeRole/></span>
