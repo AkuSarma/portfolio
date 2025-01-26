@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   
   return (
     <html lang="en">
-      <body className="dark bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100">
+      <body className="dark bg-white dark:bg-slate-1000 text-slate-900 dark:text-slate-100 relative">
         <Navbar />
         <DarkModeToogle />
         {children}

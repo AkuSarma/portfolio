@@ -16,10 +16,10 @@ const DarkModeToogle = () => {
       className="fixed top-4 left-4 p-2 bg-gray-800 text-white rounded-full w-8 hover:scale-125 active:scale-100 hover:shadow-lg"
     >
       {
-        dark && <Image src="/static/icons/sunny.png" alt="sun" width={24} height={24} />
+        dark && <Image src="/static/icons/darkMode/sunny.png" alt="sun" width={24} height={24} />
       }
       {
-        !dark && <Image src="/static/icons/crescent-moon.png" alt="moon" width={24} height={24} />
+        !dark && <Image src="/static/icons/darkMode/crescent-moon.png" alt="moon" width={24} height={24} />
       }
     </button>
   );
